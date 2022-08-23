@@ -13,4 +13,14 @@ class RandomPassword {
         return pass;
     }
 }
-console.log(new RandomPassword().makePassword(7));
+console.log(new RandomPassword().makePassword(10));
+console.log(new RandomPassword().oneRandom());
+let arr = 'abcdefghijklmnopqrstuvxwyz';
+function getRandomArbitrary(min = 0, max = arr.length - 1) {
+    return Math.round(Math.random() * (max - min) + min);
+}
+let password = '';
+for (let i = ''; i.length != 16; i = i.concat(arr.charAt(getRandomArbitrary()))) {
+    password = i;
+}
+console.log(password);
