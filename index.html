@@ -5,16 +5,47 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Recommend Password</title>
-    <script src="index.js"></script>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header>
-      <h1>Welcome to Password creation</h1>
+      <h1>Welcome to Random Password</h1>
     </header>
     <main>
       <section>
-        <input type="checkbox" id="onlyUppercase" />
+        <div class="container">
+          <label class="labelclass" for="checkNumber"
+            ><input id="checkNumber" class="checkInput" type="checkbox" />
+            <span class="checkMark"></span>
+            Number
+          </label>
+          <label class="labelclass" for="checkLowcase"
+            ><input id="checkLowcase" class="checkInput" type="checkbox" />
+            <span class="checkMark"></span>
+            String Lowcase
+          </label>
+          <label class="labelclass" for="checkUppercase"
+            ><input id="checkUppercase" class="checkInput" type="checkbox" />
+            <span class="checkMark"></span>
+            String Uppercase
+          </label>
+          <label class="labelclass" for="checkSpecial"
+            ><input id="checkSpecial" class="checkInput" type="checkbox" />
+            <span class="checkMark"></span>
+            Special Character
+          </label>
+
+          <h3>Your password</h3>
+          <input
+            id="showPassword"
+            class="inputPassword"
+            type="text"
+            placeholder="..."
+            readonly=""
+          />
+        </div>
       </section>
     </main>
+    <script src="index.js"></script>
   </body>
 </html>
