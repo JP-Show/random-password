@@ -15,37 +15,68 @@
       <section>
         <div class="container">
           <label class="labelclass" for="checkNumber"
-            ><input id="checkNumber" class="checkInput" type="checkbox" />
+            ><input
+              id="checkNumber"
+              class="checkInput checkPasswords"
+              type="checkbox"
+              value="0192837465"
+            />
             <span class="checkMark"></span>
             Number
           </label>
           <label class="labelclass" for="checkLowcase"
-            ><input id="checkLowcase" class="checkInput" type="checkbox" />
+            ><input
+              id="checkLowcase"
+              class="checkInput checkPasswords"
+              type="checkbox"
+              value="abcdefghijklmnopqrstuvxwyz"
+            />
             <span class="checkMark"></span>
             String Lowcase
           </label>
           <label class="labelclass" for="checkUppercase"
-            ><input id="checkUppercase" class="checkInput" type="checkbox" />
+            ><input
+              id="checkUppercase"
+              class="checkInput checkPasswords"
+              type="checkbox"
+              value="ABCDEFGHIJKLMNOPQRSTUVXWYZ"
+            />
             <span class="checkMark"></span>
             String Uppercase
           </label>
           <label class="labelclass" for="checkSpecial"
-            ><input id="checkSpecial" class="checkInput" type="checkbox" />
+            ><input
+              id="checkSpecial"
+              class="checkInput checkPasswords"
+              type="checkbox"
+              value="!@#$%&*"
+            />
             <span class="checkMark"></span>
             Special Character
           </label>
           <h3>Your password</h3>
+          <label class="labelclass" for="quantyLenght"
+            ><input
+              id="quantyLenght"
+              class="checkMark checkNumber"
+              type="number"
+              value="10"
+            />
+            Quanty Lenght
+          </label>
           <input
-            id="showPassword"
+            id="displayPassword"
             class="inputPassword"
             type="text"
             placeholder="..."
             readonly=""
+            value=""
           />
           <button id="makePassord">Make Password</button>
         </div>
       </section>
     </main>
-    <script src="index.js"></script>
+
+    <script src="ts/randomPassword.js"></script>
   </body>
 </html>

@@ -50,8 +50,8 @@ label {
   position: absolute;
   cursor: pointer;
   opacity: 100;
-  width: 30;
-  height: 30;
+  width: 0;
+  height: 0;
 }
 .checkMark {
   display: block;
@@ -73,4 +73,13 @@ label {
   font-size: large;
   padding: 10px;
   width: 350px;
+}
+.checkNumber {
+  width: 25px;
+  height: 25px;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
